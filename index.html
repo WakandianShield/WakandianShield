@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WakandianShield — Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Ruido de fondo -->
+  <canvas class="noise-canvas" id="noiseCanvas"></canvas>
+
+  <!-- HEADER / HERO -->
+  <header class="hero" id="hero">
+    <nav class="nav">
+      <span class="nav-logo">WKS</span>
+      <div class="nav-links">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        available for work
+      </div>
+      <h1 class="hero-name">
+        <span class="line" data-text="Wakandian">Wakandian</span>
+        <span class="line accent" data-text="Shield">Shield</span>
+      </h1>
+      <p class="hero-role">Full-Stack Developer <span class="slash">/</span> Software Engineering Student</p>
+      <p class="hero-sub">Focused on building scalable products</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Let's talk</a>
+        <a href="https://github.com/WakandianShield" target="_blank" class="btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.52 11.52 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            Developer passionate about building products that scale. I combine a solid engineering foundation with a keen eye for user experience.
+          </p>
+          <p class="about-body">
+            Currently studying Software Engineering, I specialize in modern full-stack architectures using TypeScript across the entire stack — from Next.js frontends to NestJS backends backed by PostgreSQL and Prisma.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="10">0</span>
+            <span class="stat-label">Commits & counting</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="20">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="2">0</span>
+            <span class="stat-label">Years coding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Stack</h2>
+      </div>
+      <div class="skills-categories">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item" data-icon="html">
+              <span class="skill-icon">🌐</span>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item" data-icon="css">
+              <span class="skill-icon">🎨</span>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-item" data-icon="js">
+              <span class="skill-icon">⚡</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item" data-icon="ts">
+              <span class="skill-icon">🔷</span>
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-item" data-icon="next">
+              <span class="skill-icon">▲</span>
+              <span>Next.js</span>
+            </div>
+            <div class="skill-item" data-icon="tailwind">
+              <span class="skill-icon">💨</span>
+              <span>Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-icon">🟢</span>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🐱</span>
+              <span>NestJS</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">💎</span>
+              <span>C#</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🔷</span>
+              <span>.NET</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🔴</span>
+              <span>Kotlin</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">⚙️</span>
+              <span>C++</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Data & DevOps</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-icon">🐘</span>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🍃</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🐬</span>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🔺</span>
+              <span>Prisma</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🐳</span>
+              <span>Docker</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🔧</span>
+              <span>Arduino</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <a href="https://github.com/WakandianShield" target="_blank" class="project-card" data-index="01">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">01</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3 class="project-title">Full-Stack Web App</h3>
+            <p class="project-desc">Modern web application built with Next.js + NestJS, using TypeScript end-to-end and PostgreSQL with Prisma ORM.</p>
+            <div class="project-tags">
+              <span>Next.js</span>
+              <span>NestJS</span>
+              <span>Prisma</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/WakandianShield" target="_blank" class="project-card" data-index="02">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">02</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3 class="project-title">API REST Scalable</h3>
+            <p class="project-desc">Backend service with modular architecture, Docker containerization, and automated CI/CD pipelines.</p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>TypeScript</span>
+              <span>Docker</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/WakandianShield" target="_blank" class="project-card project-card--wide" data-index="03">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">03</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3 class="project-title">Desktop / Embedded App</h3>
+            <p class="project-desc">Cross-platform application combining .NET + C# for desktop and Arduino integration for hardware control.</p>
+            <div class="project-tags">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>Kotlin</span>
+              <span>Arduino</span>
+              <span>C++</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <div class="projects-cta">
+        <a href="https://github.com/WakandianShield" target="_blank" class="btn-outline">
+          View all on GitHub
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <span class="section-num">04</span>
+        <h2 class="contact-title">Let's build<br/><em>something great</em></h2>
+        <p class="contact-sub">Open to new opportunities, collaborations, and interesting projects.</p>
+        <div class="contact-links">
+          <a href="https://github.com/WakandianShield" target="_blank" class="contact-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.52 11.52 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-bg-text">HIRE ME</div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 WakandianShield</span>
+    <span>Full-Stack Developer</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
