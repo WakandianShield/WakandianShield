@@ -42,8 +42,3 @@
 </div>
 
 ###
-
-<img width="676" height="483" alt="image" src="https://github.com/user-attachments/assets/26c940b3-4165-4a89-a8b7-1bffc2af439f" />
-
-
-###
