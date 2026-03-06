@@ -60,5 +60,5 @@
 
 
 <div align="center">
-  [Resume Website](https://wakandianshield.github.io/WakandianShield/)  
+  [Visit my online resume](https://wakandianshield.github.io/WakandianShield/)
 </div>
