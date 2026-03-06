@@ -1,30 +1,30 @@
 :root {
   /* ---- Color Palettes ---- */
-  --color-primary:      #09253E;
-  --color-secondary:    #135C62;
-  --color-accent:       #246A52;
-  --color-accent-light: #579B74;
+  --color-primary:      #02060a;
+  --color-secondary:    #06121f;
+  --color-accent:       #0b2e4a;
+  --color-accent-light: #3aa8ff;
 
   /* ---- Backgrounds ---- */
-  --bg:            #09253E;
-  --bg-alt:        #0b2e4b;
-  --surface:       #0e3856;
-  --surface-2:     #124260;
-  --border:        rgba(87, 155, 116, 0.15);
+  --bg:            #010408;
+  --bg-alt:        #020812;
+  --surface:       #06131f;
+  --surface-2:     #081a2a;
+  --border:        rgba(58, 168, 255, 0.10);
 
   /* ---- Accents ---- */
-  --accent:        #579B74;
-  --accent-2:      #246A52;
-  --accent-glow:   rgba(87, 155, 116, 0.18);
+  --accent:        #1e90ff;
+  --accent-2:      #0f5ed6;
+  --accent-glow:   rgba(30, 144, 255, 0.12);
 
   /* ---- Text ---- */
-  --text-primary:    #e8edf2;
-  --text-secondary:  #7fa99b;
-  --text-muted:      #4a7565;
+  --text-primary:    #dbe9ff;
+  --text-secondary:  #6b8fb5;
+  --text-muted:      #2a3f57;
 
   /* ---- Typography ---- */
-  --font-display:  'Syne', sans-serif;
-  --font-mono:     'Space Mono', monospace;
+  --font-display:  'Minecraft', sans-serif;
+  --font-mono:  'Segoe UI', monospace, monospace;
 
   /* ---- Spacing ---- */
   --space-xs:   0.25rem;
@@ -44,6 +44,13 @@
   --ease-in-out:  cubic-bezier(0.45, 0, 0.55, 1);
 
   /* ---- Shadows ---- */
-  --shadow-card:   0 20px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(87, 155, 116, 0.08);
-  --shadow-glow:   0 0 30px rgba(87, 155, 116, 0.5);
+  --shadow-card:   0 20px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(34, 212, 101, 0.06);
+  --shadow-glow:   0 0 35px rgba(34, 212, 101, 0.45);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-display);
+  background-color: var(--bg);
+  color: var(--text-primary);
 }

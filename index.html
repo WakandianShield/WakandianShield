@@ -16,58 +16,38 @@
 </head>
 
 <body>
-    <!-- Cursor personalizado -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor cursor--follower" id="cursorFollower"></div>
-
-    <!-- Ruido de fondo -->
-    <canvas class="noise" id="noiseCanvas"></canvas>
 
     <!-- HEADER / HERO -->
-    <header class="hero" id="hero">
-        <nav class="nav">
-            <span class="nav__logo">WKS</span>
-            <div class="nav__links">
-                <a class="nav__link" href="#about">about</a>
-                <a class="nav__link" href="#skills">skills</a>
-                <a class="nav__link" href="#projects">projects</a>
-                <a class="nav__link" href="#contact">contact</a>
+    <header id="header" class="header">
+        <nav>
+            <div class="nav__logo">
+                <span class="nav__logo-text">WakandianShield</span>
             </div>
+            <ul class="nav__links">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Stack</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
         </nav>
-
-        <div class="hero__content">
-            <div class="hero__tag">
-                <span class="hero__dot"></span>
-                available for work
-            </div>
-            <h1 class="hero__name">
-                <span class="hero__line" data-text="Wakandian">Wakandian</span>
-                <span class="hero__line hero__line--accent" data-text="Shield">Shield</span>
-            </h1>
-            <p class="hero__role">
-                Full-Stack Developer <span class="hero__slash">/</span> Software
-                Engineering Student
-            </p>
-            <p class="hero__sub">Focused on building scalable products</p>
-            <div class="hero__cta">
-                <a href="#contact" class="btn btn--primary">Let's talk</a>
-                <a href="https://github.com/WakandianShield" target="_blank" class="btn btn--ghost">
-                    <img class="btn__icon" src="Page/social-media%20icons/githubicon.png" alt="" width="18"
-                        height="18" />
-                    GitHub
-                </a>
-            </div>
-        </div>
-
-        <div class="hero__image">
-            <img src="Page/background%20images/Hero.png" alt="WakandianShield Hero" />
-        </div>
-
-        <div class="hero__scroll">
-            <span>scroll</span>
-            <div class="hero__scroll-line"></div>
-        </div>
     </header>
+
+    <section class="hero-section">
+        <div class="hero"></div>
+        <h1 class="hero__title">
+            Hi, I'm <span>WakandianShield</span><br />
+            Full-Stack Developer
+        </h1>
+        <p class="hero__subtitle">
+            Building scalable web applications with a focus on clean code and great user experience.
+        </p>
+        <a href="#projects" class="btn">
+            View Projects
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+        </a>
+    </section>
 
     <!-- ABOUT -->
     <section class="section" id="about">
@@ -116,77 +96,63 @@
                 <h2 class="section__title">Stack</h2>
             </div>
             <div class="skills">
+
+                <!-- Frontend -->
                 <div class="skills__group">
                     <h3 class="skills__group-title">Frontend</h3>
                     <div class="skills__list">
-                        <div class="skills__item">
-                            <span class="skills__icon">🌐</span><span>HTML5</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🎨</span><span>CSS3</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">⚡</span><span>JavaScript</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🔷</span><span>TypeScript</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">▲</span><span>Next.js</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">💨</span><span>Tailwind</span>
-                        </div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=html" alt="HTML5" /><span>HTML5</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=css" alt="CSS3" /><span>CSS3</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=js" alt="JavaScript" /><span>JavaScript</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=ts" alt="TypeScript" /><span>TypeScript</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" /><span>Next.js</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind" /><span>Tailwind</span></div>
                     </div>
                 </div>
 
+                <!-- Backend -->
                 <div class="skills__group">
                     <h3 class="skills__group-title">Backend</h3>
                     <div class="skills__list">
-                        <div class="skills__item">
-                            <span class="skills__icon">🟢</span><span>Node.js</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🐱</span><span>NestJS</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">💎</span><span>C#</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🔷</span><span>.NET</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🔴</span><span>Kotlin</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">⚙️</span><span>C++</span>
-                        </div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" /><span>Node.js</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" /><span>NestJS</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=cs" alt="C#" /><span>C#</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=dotnet" alt=".NET" /><span>.NET</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin" /><span>Kotlin</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=cpp" alt="C++" /><span>C++</span></div>
                     </div>
                 </div>
 
+                <!-- Databases -->
                 <div class="skills__group">
-                    <h3 class="skills__group-title">Data &amp; DevOps</h3>
+                    <h3 class="skills__group-title">Databases</h3>
                     <div class="skills__list">
-                        <div class="skills__item">
-                            <span class="skills__icon">🐘</span><span>PostgreSQL</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🍃</span><span>MongoDB</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🐬</span><span>MySQL</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🔺</span><span>Prisma</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🐳</span><span>Docker</span>
-                        </div>
-                        <div class="skills__item">
-                            <span class="skills__icon">🔧</span><span>Arduino</span>
-                        </div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" /><span>PostgreSQL</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" /><span>MongoDB</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=mysql" alt="MySQL" /><span>MySQL</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=prisma" alt="Prisma" /><span>Prisma</span></div>
                     </div>
                 </div>
+
+                <!-- Cloud -->
+                <div class="skills__group">
+                    <h3 class="skills__group-title">Cloud</h3>
+                    <div class="skills__list">
+                        <div class="skills__item"><img class="skills__icon" src="https://railway.com/brand/logo-light.png" alt="Railway" /><span>Railway</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=github" alt="GitHub" /><span>GitHub</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=git" alt="Git" /><span>Git</span></div>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skills__group">
+                    <h3 class="skills__group-title">DevOps</h3>
+                    <div class="skills__list">
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=docker" alt="Docker" /><span>Docker</span></div>
+                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=arduino" alt="Arduino" /><span>Arduino</span></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -279,7 +245,6 @@
     <section class="section contact" id="contact">
         <div class="section__container">
             <div class="contact__content">
-                <span class="section__num">04</span>
                 <h2 class="contact__title">
                     Let's build<br /><em>something great</em>
                 </h2>
@@ -288,27 +253,27 @@
                 </p>
                 <div class="contact__links">
                     <a href="https://github.com/WakandianShield" target="_blank" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media%20icons/githubicon.png" alt="" width="22"
+                        <img class="contact__icon" src="Page/social-media-icons/githubicon.png" alt="" width="22"
                             height="22" />
                         GitHub
                     </a>
                     <a href="https://linkedin.com" target="_blank" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media%20icons/linkedinicon.png" alt="" width="22"
+                        <img class="contact__icon" src="Page/social-media-icons/linkedinicon.png" alt="" width="22"
                             height="22" />
                         LinkedIn
                     </a>
                     <a href="https://instagram.com" target="_blank" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media%20icons/igicon.png" alt="" width="22"
+                        <img class="contact__icon" src="Page/social-media-icons/igicon.png" alt="" width="22"
                             height="22" />
                         Instagram
                     </a>
                     <a href="mailto:contact@wakandianshield.dev" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media%20icons/emailicon.png" alt="" width="22"
+                        <img class="contact__icon" src="Page/social-media-icons/emailicon.png" alt="" width="22"
                             height="22" />
                         Email
                     </a>
                     <a href="https://t.me/" target="_blank" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media%20icons/telicon.png" alt="" width="22"
+                        <img class="contact__icon" src="Page/social-media-icons/telicon.png" alt="" width="22"
                             height="22" />
                         Telegram
                     </a>
