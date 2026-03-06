@@ -1,6 +1,6 @@
 /* ==========================================
    WakandianShield — CV Portfolio
-   script.js
+   script.js — Updated for BEM class names
    ========================================== */
 
 (function () {
@@ -78,7 +78,10 @@
   // SCROLL REVEAL
   // ==========================================
   function addRevealClasses() {
-    const elements = document.querySelectorAll('.section-header, .about-lead, .about-body, .about-stats, .skill-group, .project-card, .contact-content, .stat');
+    const elements = document.querySelectorAll(
+      '.section__header, .about__lead, .about__body, .about__stats, ' +
+      '.skills__group, .projects__card, .contact__content, .about__stat'
+    );
     elements.forEach((el, i) => {
       el.classList.add('reveal');
       el.style.transitionDelay = (i % 4) * 80 + 'ms';
@@ -95,7 +98,7 @@
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-  document.querySelectorAll('.reveal, .reveal-left').forEach(el => {
+  document.querySelectorAll('.reveal, .reveal--left').forEach(el => {
     revealObserver.observe(el);
   });
 
@@ -125,21 +128,21 @@
   const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const counters = entry.target.querySelectorAll('.stat-num[data-target]');
+        const counters = entry.target.querySelectorAll('.about__stat-num[data-target]');
         counters.forEach(animateCounter);
         counterObserver.unobserve(entry.target);
       }
     });
   }, { threshold: 0.3 });
 
-  const statsSection = document.querySelector('.about-stats');
+  const statsSection = document.querySelector('.about__stats');
   if (statsSection) counterObserver.observe(statsSection);
 
   // ==========================================
   // ACTIVE NAV LINK
   // ==========================================
   const sections = document.querySelectorAll('section[id], header[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
+  const navLinks = document.querySelectorAll('.nav__link');
 
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -175,16 +178,16 @@
   const nav = document.querySelector('.nav');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 80) {
-      nav.style.background = 'rgba(8, 12, 15, 0.98)';
+      nav.style.background = 'rgba(9, 37, 62, 0.98)';
     } else {
-      nav.style.background = 'linear-gradient(to bottom, rgba(8, 12, 15, 0.95), transparent)';
+      nav.style.background = 'linear-gradient(to bottom, rgba(9, 37, 62, 0.95), transparent)';
     }
   }, { passive: true });
 
   // ==========================================
   // HERO PARALLAX
   // ==========================================
-  const heroContent = document.querySelector('.hero-content');
+  const heroContent = document.querySelector('.hero__content');
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     if (heroContent && scrollY < window.innerHeight) {
@@ -196,7 +199,7 @@
   // ==========================================
   // SKILL ITEMS — STAGGER REVEAL
   // ==========================================
-  const skillItems = document.querySelectorAll('.skill-item');
+  const skillItems = document.querySelectorAll('.skills__item');
   skillItems.forEach((item, i) => {
     item.style.opacity = '0';
     item.style.transform = 'translateX(-10px)';
@@ -206,7 +209,7 @@
   const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const items = entry.target.querySelectorAll('.skill-item');
+        const items = entry.target.querySelectorAll('.skills__item');
         items.forEach(item => {
           item.style.opacity = '1';
           item.style.transform = 'translateX(0)';
@@ -216,12 +219,12 @@
     });
   }, { threshold: 0.2 });
 
-  document.querySelectorAll('.skill-group').forEach(g => skillObserver.observe(g));
+  document.querySelectorAll('.skills__group').forEach(g => skillObserver.observe(g));
 
   // ==========================================
   // PROJECT CARDS — TILT EFFECT
   // ==========================================
-  document.querySelectorAll('.project-card').forEach(card => {
+  document.querySelectorAll('.projects__card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
@@ -242,7 +245,7 @@
   // ==========================================
   // GLITCH TEXT EFFECT ON HERO NAME
   // ==========================================
-  const heroLines = document.querySelectorAll('.hero-name .line');
+  const heroLines = document.querySelectorAll('.hero__line');
   heroLines.forEach(line => {
     line.addEventListener('mouseenter', () => {
       line.style.animation = 'glitch 0.3s steps(2) forwards';
@@ -257,16 +260,16 @@
   style.textContent = `
     @keyframes glitch {
       0%   { text-shadow: none; }
-      20%  { text-shadow: 3px 0 0 rgba(0,229,255,0.6), -3px 0 0 rgba(124,58,237,0.6); }
-      40%  { text-shadow: -3px 0 0 rgba(0,229,255,0.6), 3px 0 0 rgba(124,58,237,0.6); transform: skewX(2deg); }
-      60%  { text-shadow: 2px 0 0 rgba(0,229,255,0.4), -2px 0 0 rgba(124,58,237,0.4); transform: skewX(-1deg); }
-      80%  { text-shadow: -1px 0 0 rgba(0,229,255,0.3); transform: none; }
+      20%  { text-shadow: 3px 0 0 rgba(87,155,116,0.6), -3px 0 0 rgba(36,106,82,0.6); }
+      40%  { text-shadow: -3px 0 0 rgba(87,155,116,0.6), 3px 0 0 rgba(36,106,82,0.6); transform: skewX(2deg); }
+      60%  { text-shadow: 2px 0 0 rgba(87,155,116,0.4), -2px 0 0 rgba(36,106,82,0.4); transform: skewX(-1deg); }
+      80%  { text-shadow: -1px 0 0 rgba(87,155,116,0.3); transform: none; }
       100% { text-shadow: none; }
     }
   `;
   document.head.appendChild(style);
 
-  console.log('%cWakandianShield — Full Stack Developer', 'color: #00e5ff; font-size: 14px; font-weight: bold;');
-  console.log('%chttps://github.com/WakandianShield', 'color: #6b7d8f; font-size: 11px;');
+  console.log('%cWakandianShield — Full Stack Developer', 'color: #579B74; font-size: 14px; font-weight: bold;');
+  console.log('%chttps://github.com/WakandianShield', 'color: #7fa99b; font-size: 11px;');
 
 })();

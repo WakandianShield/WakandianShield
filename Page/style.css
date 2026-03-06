@@ -1,8 +1,3 @@
-/* ==========================================
-   WakandianShield — CV Portfolio
-   Dark Mode · Syne + Space Mono
-   ========================================== */
-
 :root {
   --bg: #080c0f;
   --bg-alt: #0d1117;
@@ -45,9 +40,7 @@ a {
   text-decoration: none;
 }
 
-/* ==========================================
-   CURSOR
-   ========================================== */
+/* CURSOR */
 
 .cursor {
   width: 8px;
@@ -92,9 +85,7 @@ body:has(a:hover) .cursor-follower {
   border-color: rgba(124, 58, 237, 0.6);
 }
 
-/* ==========================================
-   NOISE CANVAS
-   ========================================== */
+/* NOISE CANVAS */
 
 .noise-canvas {
   position: fixed;
@@ -107,9 +98,7 @@ body:has(a:hover) .cursor-follower {
   z-index: 1;
 }
 
-/* ==========================================
-   NAVIGATION
-   ========================================== */
+/* NAVIGATION */
 
 .nav {
   position: fixed;
@@ -167,9 +156,7 @@ body:has(a:hover) .cursor-follower {
   width: 100%;
 }
 
-/* ==========================================
-   HERO
-   ========================================== */
+/* HERO */
 
 .hero {
   min-height: 100vh;
@@ -366,7 +353,6 @@ body:has(a:hover) .cursor-follower {
   background: rgba(0, 229, 255, 0.04);
 }
 
-/* Scroll indicator */
 .hero-scroll {
   position: absolute;
   bottom: 2.5rem;
@@ -399,9 +385,7 @@ body:has(a:hover) .cursor-follower {
   50% { width: 30px; opacity: 0.5; }
 }
 
-/* ==========================================
-   SECTIONS
-   ========================================== */
+/* SECTIONS */
 
 .section {
   padding: 6rem 0;
@@ -444,9 +428,7 @@ body:has(a:hover) .cursor-follower {
   color: var(--text-primary);
 }
 
-/* ==========================================
-   ABOUT
-   ========================================== */
+/* ABOUT */
 
 .about-grid {
   display: grid;
@@ -502,9 +484,7 @@ body:has(a:hover) .cursor-follower {
   text-transform: uppercase;
 }
 
-/* ==========================================
-   SKILLS
-   ========================================== */
+/* SKILLS */
 
 .skills-categories {
   display: grid;
@@ -568,9 +548,7 @@ body:has(a:hover) .cursor-follower {
   text-align: center;
 }
 
-/* ==========================================
-   PROJECTS
-   ========================================== */
+/* PROJECTS */
 
 .projects-grid {
   display: grid;
@@ -709,9 +687,7 @@ body:has(a:hover) .cursor-follower {
   gap: 1.25rem;
 }
 
-/* ==========================================
-   CONTACT
-   ========================================== */
+/* CONTACT */
 
 .section-contact {
   min-height: 60vh;
@@ -798,9 +774,7 @@ body:has(a:hover) .cursor-follower {
   white-space: nowrap;
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
+/* FOOTER */
 
 .footer {
   padding: 2rem 4rem;
@@ -817,9 +791,7 @@ body:has(a:hover) .cursor-follower {
   z-index: 2;
 }
 
-/* ==========================================
-   ANIMATIONS ON SCROLL
-   ========================================== */
+/* ANIMATIONS ON SCROLL */
 
 .reveal {
   opacity: 0;
@@ -843,9 +815,7 @@ body:has(a:hover) .cursor-follower {
   transform: translateX(0);
 }
 
-/* ==========================================
-   RESPONSIVE
-   ========================================== */
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .nav { padding: 1.5rem 2rem; }
