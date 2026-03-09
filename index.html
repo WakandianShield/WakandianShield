@@ -1,294 +1,574 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WakandianShield — Full-Stack Developer</title>
-    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet" />
-    <link rel="stylesheet" href="Page/style-properties.css" />
+    <title>Santiago Gallardo – CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="Page/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
-        rel="stylesheet" />
 </head>
 
 <body>
+    <div class="page">
+        <!-- ABOVE FOLD -->
+        <div class="above-fold">
 
-    <!-- HEADER / HERO -->
-    <header id="header" class="header">
-        <nav>
-            <div class="nav__logo">
-                <span class="nav__logo-text">WakandianShield</span>
+            <div class="fold__ring">
+                <div class="ring">
+                    <div class="ring__icon"><img src="https://skillicons.dev/icons?i=react" alt="React" /></div>
+                    <div class="ring__icon"><img src="https://skillicons.dev/icons?i=css" alt="CSS3" /></div>
+                    <div class="ring__icon"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" /></div>
+                    <div class="ring__icon"><img src="https://railway.com/brand/logo-light.png" alt="Railway" /></div>
+                    <div class="ring__icon"><img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" /></div>
+                    <div class="ring__icon"><img src="https://skillicons.dev/icons?i=notion" alt="Notion" /></div>
+                    <div class="ring__icon"><img src="https://skillicons.dev/icons?i=cs" alt="C#" /></div>
+                    <div class="ring__center">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHN_vOlfQ3mTQ/profile-displayphoto-scale_200_200/B56ZwrXfb_JQAY-/0/1770254104956?e=1774483200&v=beta&t=iQZvW1IlaNAwztRXrMmg37yhx3vDmD3TLaOdbhWL35w"
+                            alt="Santiago Gallardo" />
+                    </div>
+                </div>
             </div>
-            <ul class="nav__links">
-                <li><a href="#about" class="nav__link">About</a></li>
-                <li><a href="#skills" class="nav__link">Stack</a></li>
-                <li><a href="#projects" class="nav__link">Projects</a></li>
-                <li><a href="#contact" class="nav__link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero-section">
-        <div class="hero"></div>
-        <h1 class="hero__title">
-            Hi, I'm <span>WakandianShield</span><br />
-            Full-Stack Developer
-        </h1>
-        <p class="hero__subtitle">
-            Building scalable web applications with a focus on clean code and great user experience.
-        </p>
-        <a href="#projects" class="btn">
-            View Projects
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-        </a>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-        <div class="section__container">
-            <div class="section__header">
-                <span class="section__num">01</span>
-                <h2 class="section__title">About</h2>
+            <div class="fold__identity hero__identity">
+                <h1 class="hero__name">Santiago <span>Gallardo</span></h1>
+                <div class="hero__role">Software Development Student</div>
+                <div class="hero__location">Guadalajara, Jalisco, México</div>
             </div>
-            <div class="about">
-                <div class="about__text">
-                    <p class="about__lead">
-                        Developer passionate about building products that scale. I combine
-                        a solid engineering foundation with a keen eye for user
-                        experience.
+
+            <div class="workspace-banner">
+                <img src="./Page/setup.png" alt="" />
+            </div>
+        </div>
+
+        <!-- BODY GRID -->
+        <div class="body-grid">
+            <!-- MAIN -->
+            <main>
+                <section>
+                    <div class="section-label">About</div>
+                    <p class="about-text">
+                        Aspiring Software and Machine Learning Engineer currently studying Software Development at CETI,
+                        with hands-on experience across the full stack — from responsive frontends with React, to
+                        backends powered by C#, .NET, Python, and NestJS, supported by databases like PostgreSQL, MySQL,
+                        and MongoDB.
+                        I have a strong passion for building real-world applications that solve genuine problems, which
+                        has led me to develop projects ranging from a full-stack Restaurant ERP system to a complete RPG
+                        game built from scratch. My approach is rooted in clean architecture, object-oriented design,
+                        and a continuous learning mindset.
+                        Beyond development, I am actively expanding into cloud infrastructure, DevOps, and artificial
+                        intelligence — with a particular interest in machine learning and its real-world applications.
+                        Eager to contribute to impactful projects, grow alongside talented teams, and keep pushing the
+                        boundaries of what I can build.
                     </p>
-                    <p class="about__body">
-                        Currently studying Software Engineering, I specialize in modern
-                        full-stack architectures using TypeScript across the entire stack
-                        — from Next.js frontends to NestJS backends backed by PostgreSQL
-                        and Prisma.
-                    </p>
-                </div>
-                <div class="about__stats">
-                    <div class="about__stat">
-                        <span class="about__stat-num" data-target="10">0</span>
-                        <span class="about__stat-label">Commits &amp; counting</span>
-                    </div>
-                    <div class="about__stat">
-                        <span class="about__stat-num" data-target="20">0</span>
-                        <span class="about__stat-label">Technologies</span>
-                    </div>
-                    <div class="about__stat">
-                        <span class="about__stat-num" data-target="2">0</span>
-                        <span class="about__stat-label">Years coding</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </section>
 
-    <!-- SKILLS -->
-    <section class="section section--alt" id="skills">
-        <div class="section__container">
-            <div class="section__header">
-                <span class="section__num">02</span>
-                <h2 class="section__title">Stack</h2>
-            </div>
-            <div class="skills">
-
-                <!-- Frontend -->
-                <div class="skills__group">
-                    <h3 class="skills__group-title">Frontend</h3>
-                    <div class="skills__list">
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=html" alt="HTML5" /><span>HTML5</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=css" alt="CSS3" /><span>CSS3</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=js" alt="JavaScript" /><span>JavaScript</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=ts" alt="TypeScript" /><span>TypeScript</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" /><span>Next.js</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind" /><span>Tailwind</span></div>
+                <section>
+                    <div class="section-label">Education</div>
+                    <div class="edu-item">
+                        <div class="edu-item__name">CETI – Centro de Enseñanza Técnica Industrial</div>
+                        <div class="edu-item__sub">Technical High School · Software Development Technologist (in
+                            progress)
+                        </div>
                     </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="skills__group">
-                    <h3 class="skills__group-title">Backend</h3>
-                    <div class="skills__list">
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" /><span>Node.js</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" /><span>NestJS</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=cs" alt="C#" /><span>C#</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=dotnet" alt=".NET" /><span>.NET</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin" /><span>Kotlin</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=cpp" alt="C++" /><span>C++</span></div>
+                    <div class="edu-item">
+                        <div class="edu-item__name">Colegio México Nuevo</div>
+                        <div class="edu-item__sub">Completed Secondary Education</div>
                     </div>
-                </div>
+                </section>
 
-                <!-- Databases -->
-                <div class="skills__group">
-                    <h3 class="skills__group-title">Databases</h3>
-                    <div class="skills__list">
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" /><span>PostgreSQL</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" /><span>MongoDB</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=mysql" alt="MySQL" /><span>MySQL</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=prisma" alt="Prisma" /><span>Prisma</span></div>
+                <section>
+                    <div class="section-label">Projects</div>
+                    <div class="project">
+                        <div class="project__title">RestaurantOS – Restaurant ERP System</div>
+                        <div class="project__desc">Full-stack ERP tailored for restaurant businesses, covering table
+                            management, order tracking, menu configuration, staff roles, inventory control, and sales
+                            reporting. Built with a REST API backend and a responsive React frontend, deployed on
+                            Railway with a PostgreSQL database managed through Prisma ORM.</div>
+                        <div class="project__techs">
+                            <span class="tag">React</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">NestJS</span>
+                            <span class="tag">Prisma</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Railway</span>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Cloud -->
-                <div class="skills__group">
-                    <h3 class="skills__group-title">Cloud</h3>
-                    <div class="skills__list">
-                        <div class="skills__item"><img class="skills__icon" src="https://railway.com/brand/logo-light.png" alt="Railway" /><span>Railway</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=github" alt="GitHub" /><span>GitHub</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=git" alt="Git" /><span>Git</span></div>
+                    <div class="project">
+                        <div class="project__title">El Último Miembro – RPG Game</div>
+                        <div class="project__desc">Role-playing game with character creation, combat system, map
+                            exploration, inventory management, and NPC interactions. Persistent storage via MySQL, with
+                            OOP, pathfinding algorithms, and UI design.</div>
+                        <div class="project__techs">
+                            <span class="tag">C#</span>
+                            <span class="tag">.NET 8</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Windows Forms</span>
+                            <span class="tag">Visual Studio</span>
+                        </div>
                     </div>
-                </div>
 
-                <!-- DevOps -->
-                <div class="skills__group">
-                    <h3 class="skills__group-title">DevOps</h3>
-                    <div class="skills__list">
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=docker" alt="Docker" /><span>Docker</span></div>
-                        <div class="skills__item"><img class="skills__icon" src="https://skillicons.dev/icons?i=arduino" alt="Arduino" /><span>Arduino</span></div>
+                    <div class="project">
+                        <div class="project__title">Gestor de Notas</div>
+                        <div class="project__desc">Desktop CRUD app for managing notes with real-time search. Clean UI
+                            with Windows Forms and MongoDB for efficient data storage and retrieval.</div>
+                        <div class="project__techs">
+                            <span class="tag">C#</span>
+                            <span class="tag">.NET 8</span>
+                            <span class="tag">Windows Forms</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Visual Studio</span>
+                        </div>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
+                    <div class="project">
+                        <div class="project__title">Corporate Website Project</div>
+                        <div class="project__desc">Responsive website for an industrial services company. Optimized for
+                            SEO and social media sharing with Open Graph metadata.</div>
+                        <div class="project__techs">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                    </div>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-        <div class="section__container">
-            <div class="section__header">
-                <span class="section__num">03</span>
-                <h2 class="section__title">Projects</h2>
-            </div>
-            <div class="projects">
-                <div class="projects__grid">
-                    <a href="https://github.com/WakandianShield" target="_blank" class="projects__card" data-index="01">
-                        <div class="projects__card-inner">
-                            <div class="projects__top">
-                                <span class="projects__num">01</span>
-                                <span class="projects__arrow">↗</span>
-                            </div>
-                            <h3 class="projects__title">Full-Stack Web App</h3>
-                            <p class="projects__desc">
-                                Modern web application built with Next.js + NestJS, using
-                                TypeScript end-to-end and PostgreSQL with Prisma ORM.
-                            </p>
-                            <div class="projects__tags">
-                                <span class="projects__tag">Next.js</span>
-                                <span class="projects__tag">NestJS</span>
-                                <span class="projects__tag">Prisma</span>
-                                <span class="projects__tag">PostgreSQL</span>
+                    <div class="project">
+                        <div class="project__title">CodingPractices – Videogame-Inspired Practice Platform</div>
+                        <div class="project__desc">Interactive coding practice platform with a videogame aesthetic where
+                            users pick a language, choose a difficulty, write their solution in a built-in IDE-style
+                            editor, compile it in the browser, and unlock hints when stuck. Supports 8 languages across
+                            3 difficulty levels, with a file-explorer interface for navigating exercises.</div>
+                        <div class="project__techs">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">npm</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section-label">Knowledge</div>
+                    <ul class="knowledge-list">
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Algorithms & Data Structures</li>
+                        <li>Software Development Lifecycle (SDLC)</li>
+                        <li>Fundamentals of Systems Engineering</li>
+                        <li>Network Infrastructure Basics</li>
+                        <li>Digital Systems / Electronics</li>
+                        <li>Software Tools & IDEs</li>
+                    </ul>
+                </section>
+            </main>
+
+            <!-- ASIDE -->
+            <aside>
+                <!-- CONTACT -->
+                <section>
+                    <div class="section-label">Contact</div>
+                    <div class="contact-list">
+
+                        <div class="contact-row">
+                            <img src="https://i.pinimg.com/736x/e6/c9/a6/e6c9a67a1d7260dac7660a4be66cbd2f.jpg"
+                                alt="Phone" />
+                            <div class="contact-row__info">
+                                <span class="contact-row__label">Phone</span>
+                                <span class="contact-row__value plain">+52 33 3392 9652</span>
                             </div>
                         </div>
-                    </a>
 
-                    <a href="https://github.com/WakandianShield" target="_blank" class="projects__card" data-index="02">
-                        <div class="projects__card-inner">
-                            <div class="projects__top">
-                                <span class="projects__num">02</span>
-                                <span class="projects__arrow">↗</span>
-                            </div>
-                            <h3 class="projects__title">API REST Scalable</h3>
-                            <p class="projects__desc">
-                                Backend service with modular architecture, Docker
-                                containerization, and automated CI/CD pipelines.
-                            </p>
-                            <div class="projects__tags">
-                                <span class="projects__tag">Node.js</span>
-                                <span class="projects__tag">TypeScript</span>
-                                <span class="projects__tag">Docker</span>
-                                <span class="projects__tag">MongoDB</span>
+                        <div class="contact-row">
+                            <img src="https://skillicons.dev/icons?i=gmail" alt="Gmail" />
+                            <div class="contact-row__info">
+                                <span class="contact-row__label">Email</span>
+                                <span class="contact-row__value plain">santiagogallardojr@gmail.com</span>
                             </div>
                         </div>
-                    </a>
 
-                    <a href="https://github.com/WakandianShield" target="_blank"
-                        class="projects__card projects__card--wide" data-index="03">
-                        <div class="projects__card-inner">
-                            <div class="projects__top">
-                                <span class="projects__num">03</span>
-                                <span class="projects__arrow">↗</span>
+                        <a class="contact-row" href="https://github.com/wakandianshield" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+                            <div class="contact-row__info">
+                                <span class="contact-row__label">GitHub</span>
+                                <span class="contact-row__value">wakandianshield</span>
                             </div>
-                            <h3 class="projects__title">Desktop / Embedded App</h3>
-                            <p class="projects__desc">
-                                Cross-platform application combining .NET + C# for desktop and
-                                Arduino integration for hardware control.
-                            </p>
-                            <div class="projects__tags">
-                                <span class="projects__tag">C#</span>
-                                <span class="projects__tag">.NET</span>
-                                <span class="projects__tag">Kotlin</span>
-                                <span class="projects__tag">Arduino</span>
-                                <span class="projects__tag">C++</span>
+                        </a>
+
+                        <a class="contact-row" href="https://www.linkedin.com/in/santiago-gallardo-1aa14a3a3/"
+                            target="_blank">
+                            <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" />
+                            <div class="contact-row__info">
+                                <span class="contact-row__label">LinkedIn</span>
+                                <span class="contact-row__value">Santiago Gallardo</span>
+                            </div>
+                        </a>
+
+                        <a class="contact-row" href="https://www.instagram.com/santi._.galla/" target="_blank">
+                            <img src="https://skillicons.dev/icons?i=instagram" alt="Instagram" />
+                            <div class="contact-row__info">
+                                <span class="contact-row__label">Instagram</span>
+                                <span class="contact-row__value">@santi._.galla</span>
+                            </div>
+                        </a>
+
+                        <a class="contact-row"
+                            href="https://open.spotify.com/user/wdgv8riaaaq2nqghfoke45oja?si=6e08025519c24f24"
+                            target="_blank">
+                            <img src="https://skillicons.dev/icons?i=spotify" alt="Spotify" />
+                            <div class="contact-row__info">
+                                <span class="contact-row__label">Spotify</span>
+                                <span class="contact-row__value">Santiago Gallardo</span>
+                            </div>
+                        </a>
+
+                        <a class="contact-row"
+                            href="https://www.notion.so/Engineering-Knowledge-Base-31d44980ffef8043a0b9fa4f5b4ec9e6?source=copy_link"
+                            target="_blank">
+                            <img src="https://skillicons.dev/icons?i=notion" alt="Notion" />
+                            <div class="contact-row__info">
+                                <span class="contact-row__label">Notion</span>
+                                <span class="contact-row__value">Engineering Knowledge Base</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </section>
+
+                <!-- LANGUAGES -->
+                <section>
+                    <div class="section-label">Languages</div>
+                    <div class="lang-item">
+                        <span>Spanish</span>
+                        <span class="lang-level">Native · 100%</span>
+                    </div>
+                    <div class="lang-item">
+                        <span>English</span>
+                        <span class="lang-level">B2 Upper-Intermediate</span>
+                    </div>
+                </section>
+
+                <!-- SKILLS -->
+                <section>
+                    <div class="section-label">Skills & Technologies</div>
+
+                    <!-- frontend -->
+                    <div class="skill-group">
+                        <div class="skill-group__title">Frontend</div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=html" alt="HTML5" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>HTML5</span><span class="skill-pct">75%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="75"></div>
+                                </div>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="projects__cta">
-                    <a href="https://github.com/WakandianShield" target="_blank" class="btn btn--outline">
-                        View all on GitHub
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=css" alt="CSS3" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>CSS3</span><span class="skill-pct">70%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>JavaScript</span><span class="skill-pct">55%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="55"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>TypeScript</span><span class="skill-pct">40%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="40"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=react" alt="React" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>React</span><span class="skill-pct">40%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="40"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Next.js</span><span class="skill-pct">30%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="30"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>WordPress</span><span class="skill-pct">35%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="35"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- backend -->
+                    <div class="skill-group">
+                        <div class="skill-group__title">Backend</div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=cs" alt="C#" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>C#</span><span class="skill-pct">75%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=dotnet" alt=".NET" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>.NET</span><span class="skill-pct">65%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=python" alt="Python" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Python</span><span class="skill-pct">60%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=cpp" alt="C++" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>C++</span><span class="skill-pct">55%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="55"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Node.js</span><span class="skill-pct">35%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="35"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>NestJS</span><span class="skill-pct">25%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="25"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Kotlin</span><span class="skill-pct">25%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="25"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- databases -->
+                    <div class="skill-group">
+                        <div class="skill-group__title">Databases</div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>MySQL</span><span class="skill-pct">45%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="45"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>MongoDB</span><span class="skill-pct">35%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="35"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>PostgreSQL</span><span class="skill-pct">25%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="25"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=prisma" alt="Prisma" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Prisma</span><span class="skill-pct">20%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="20"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tools -->
+                    <div class="skill-group">
+                        <div class="skill-group__title">Tools & IDEs</div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>VS Code</span><span class="skill-pct">80%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=visualstudio" alt="Visual Studio" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Visual Studio</span><span class="skill-pct">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=androidstudio" alt="Android Studio" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Android Studio</span><span class="skill-pct">30%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="30"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- cloud -->
+                    <div class="skill-group">
+                        <div class="skill-group__title">Cloud & DevOps</div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=git" alt="Git" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Git</span><span class="skill-pct">65%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>GitHub</span><span class="skill-pct">65%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=docker" alt="Docker" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Docker</span><span class="skill-pct">30%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="30"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://railway.com/brand/logo-light.png" alt="Railway" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Railway</span><span class="skill-pct">30%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="30"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://skillicons.dev/icons?i=arduino" alt="Arduino" />
+                            <div class="skill-item__info">
+                                <div class="skill-header"><span>Arduino</span><span class="skill-pct">35%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="35"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- learning -->
+                    <div class="skill-group">
+                        <div class="skill-group__title">⟶ Currently Learning / Goals</div>
+                        <p class="learning-note">Technologies I'm actively exploring or aiming to master.</p>
+                        <div class="learning-grid">
+                            <div class="learning-chip">
+                                <img src="https://skillicons.dev/icons?i=java" alt="Java" />
+                                <span>Java</span>
+                            </div>
+                            <div class="learning-chip">
+                                <img src="https://skillicons.dev/icons?i=aws" alt="AWS" />
+                                <span>AWS</span>
+                            </div>
+                            <div class="learning-chip">
+                                <img src="https://skillicons.dev/icons?i=linux" alt="Linux" />
+                                <span>Linux</span>
+                            </div>
+                            <div class="learning-chip">
+                                <img src="https://skillicons.dev/icons?i=kali" alt="Kali Linux" />
+                                <span>Kali</span>
+                            </div>
+                            <div class="learning-chip">
+                                <img src="https://skillicons.dev/icons?i=windows" alt="Windows" />
+                                <span>Windows</span>
+                            </div>
+                            <div class="learning-chip">
+                                <img src="https://skillicons.dev/icons?i=unity" alt="Unity" />
+                                <span>Unity</span>
+                            </div>
+                            <div class="learning-chip">
+                                <img src="https://skillicons.dev/icons?i=unreal" alt="Unreal Engine" />
+                                <span>Unreal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </aside>
         </div>
-    </section>
+    </div>
 
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-        <div class="section__container">
-            <div class="contact__content">
-                <h2 class="contact__title">
-                    Let's build<br /><em>something great</em>
-                </h2>
-                <p class="contact__sub">
-                    Open to new opportunities, collaborations, and interesting projects.
-                </p>
-                <div class="contact__links">
-                    <a href="https://github.com/WakandianShield" target="_blank" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media-icons/githubicon.png" alt="" width="22"
-                            height="22" />
-                        GitHub
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media-icons/linkedinicon.png" alt="" width="22"
-                            height="22" />
-                        LinkedIn
-                    </a>
-                    <a href="https://instagram.com" target="_blank" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media-icons/igicon.png" alt="" width="22"
-                            height="22" />
-                        Instagram
-                    </a>
-                    <a href="mailto:contact@wakandianshield.dev" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media-icons/emailicon.png" alt="" width="22"
-                            height="22" />
-                        Email
-                    </a>
-                    <a href="https://t.me/" target="_blank" class="contact__link">
-                        <img class="contact__icon" src="Page/social-media-icons/telicon.png" alt="" width="22"
-                            height="22" />
-                        Telegram
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="contact__bg-text">HIRE ME</div>
-    </section>
-
-    <footer class="footer">
-        <span>© 2026 WakandianShield</span>
-        <span>Full-Stack Developer</span>
-    </footer>
-
-    <script src="Page/script.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelectorAll('.skill-fill').forEach(function (bar) {
+                    bar.style.width = bar.dataset.w + '%';
+                });
+            }, 400);
+        });
+    </script>
 </body>
 
 </html>
