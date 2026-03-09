@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1220&height=120&section=header&fontColor=5b9cf6" />
-</div>
-
 <h1 align="center">Santiago Gallardo</h1>
 <h3 align="center">Software Development Student · Full-Stack Developer</h3>
 <p align="center">Guadalajara, Jalisco, México</p>
@@ -73,9 +69,6 @@
 
 <h3 align="center">Stats</h3> 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=wakandianshield&locale=en&mode=daily&theme=tokyonight&hide_border=true&background=07090f&ring=5b9cf6&fire=5b9cf6&currStreakLabel=5b9cf6" height="150"/>
-</div>
+  <img src="https://streak-stats.demolab.com?user=wakandianshield&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1220&height=80&section=footer" />
 </div>
