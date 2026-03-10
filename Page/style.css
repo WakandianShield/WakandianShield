@@ -322,8 +322,8 @@ p {
 /* CONTACTO */
 .contact-list { 
   display: flex; 
-  flex-direction: 
-  column; gap: 5px; 
+  flex-direction: column; 
+  gap: 5px; 
 }
 
 .contact-row {
