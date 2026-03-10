@@ -2,14 +2,18 @@
   --bg: #07090f;
   --surface: #0d1220;
   --border: #1c2744;
-  --gold: #5b9cf6;
-  --gold-dim: #2d6ab4;
+  --gold: #9d8dfa;
+  --gold-dim: #3f4899;
   --text: #d8e4f5;
-  --muted: #5c7aaa;
+  --muted: #7879b6;
   --white: #eef3ff;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
 
 body {
   background: var(--bg);
@@ -19,17 +23,23 @@ body {
   line-height: 1.6;
 }
 
-a { color: var(--gold); text-decoration: none; }
-a:hover { opacity: 0.8; }
+a { 
+  color: var(--gold); 
+  text-decoration: none; 
+}
 
-/* PAGE */
+a:hover { 
+  opacity: 0.8; 
+}
+
+/* PAGINA */
 .page {
   max-width: 65%;
   margin: 0 auto;
   padding: 0 28px 64px;
 }
 
-/* ABOVE FOLD */
+/* SECCION SUPERIOR */
 .above-fold {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -52,7 +62,7 @@ a:hover { opacity: 0.8; }
   text-align: center;
 }
 
-/* HERO */
+/* HEROE */
 .hero__identity {
   display: flex;
   flex-direction: column;
@@ -67,7 +77,9 @@ a:hover { opacity: 0.8; }
   letter-spacing: -1.5px;
 }
 
-.hero__name span { color: var(--gold); }
+.hero__name span { 
+  color: var(--gold); 
+}
 
 .hero__role {
   font-size: 0.7rem;
@@ -83,7 +95,7 @@ a:hover { opacity: 0.8; }
   margin-top: 6px;
 }
 
-/* RING */
+/* ANILLO */
 .ring {
   position: relative;
   width: 300px;
@@ -184,7 +196,7 @@ a:hover { opacity: 0.8; }
       var(--bg) 100%);
 }
 
-/* BODY GRID */
+/* PARTE PRINCIPAL */
 .body-grid {
   display: grid;
   grid-template-columns: 1fr 280px;
@@ -192,8 +204,10 @@ a:hover { opacity: 0.8; }
   margin-top: 44px;
 }
 
-/* SECTIONS */
-section { margin-bottom: 40px; }
+/* SECCIONES */
+section { 
+  margin-bottom: 40px; 
+}
 
 .section-label {
   display: flex;
@@ -213,16 +227,35 @@ section { margin-bottom: 40px; }
   background: var(--border);
 }
 
-/* ABOUT */
-p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
-.about-text { color: #9ab3d4; }
+/* SOBRE MI */
+p { 
+  color: var(--muted); 
+  font-size: 0.875rem; 
+  line-height: 1.8; 
+}
 
-/* EDUCATION */
-.edu-item { margin-bottom: 14px; }
-.edu-item__name { font-size: 0.88rem; color: var(--text); font-weight: 500; }
-.edu-item__sub { font-size: 0.76rem; color: var(--muted); }
+.about-text { 
+  color: #9ab3d4; 
+}
 
-/* PROJECTS */
+/* EDUCACION */
+.edu-item { 
+  margin-bottom: 14px; 
+}
+
+.edu-item__name { 
+  font-size: 0.88rem; 
+  color: var(--text); 
+  font-weight: 500; 
+}
+
+.edu-item__sub { 
+  font-size: 0.76rem; 
+  color: var(--muted); 
+}
+
+
+/* PROYECTOS */
 .project {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -232,7 +265,9 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   transition: border-left-color 0.2s;
 }
 
-.project:hover { border-left-color: var(--gold-dim); }
+.project:hover { 
+  border-left-color: var(--gold-dim); 
+}
 
 .project__title {
   font-size: 0.95rem;
@@ -248,7 +283,11 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   line-height: 1.6;
 }
 
-.project__techs { display: flex; flex-wrap: wrap; gap: 4px; }
+.project__techs { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 4px; 
+}
 
 .tag {
   background: var(--bg);
@@ -259,8 +298,10 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   border-radius: 2px;
 }
 
-/* KNOWLEDGE */
-.knowledge-list { list-style: none; }
+/* CONOCIMIENTOS */
+.knowledge-list { 
+  list-style: none; 
+}
 
 .knowledge-list li {
   display: flex;
@@ -272,10 +313,18 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   color: var(--muted);
 }
 
-.knowledge-list li::before { content: '▸'; color: var(--gold); font-size: 0.6rem; }
+.knowledge-list li::before { 
+  content: '▸'; 
+  color: var(--gold); 
+  font-size: 0.6rem; 
+}
 
-/* CONTACT */
-.contact-list { display: flex; flex-direction: column; gap: 5px; }
+/* CONTACTO */
+.contact-list { 
+  display: flex; 
+  flex-direction: 
+  column; gap: 5px; 
+}
 
 .contact-row {
   display: flex;
@@ -288,7 +337,9 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   transition: border-color 0.2s;
 }
 
-.contact-row:hover { border-color: var(--gold); }
+.contact-row:hover { 
+  border-color: var(--gold); 
+}
 
 .contact-row img {
   width: 20px; height: 20px;
@@ -297,7 +348,10 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   flex-shrink: 0;
 }
 
-.contact-row__info { display: flex; flex-direction: column; }
+.contact-row__info { 
+  display: flex; 
+  flex-direction: column; 
+}
 
 .contact-row__label {
   font-size: 0.6rem;
@@ -306,10 +360,16 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   text-transform: uppercase;
 }
 
-.contact-row__value { font-size: 0.76rem; color: var(--gold); }
-.contact-row__value.plain { color: var(--text); }
+.contact-row__value { 
+  font-size: 0.76rem; 
+  color: var(--gold); 
+}
 
-/* LANGUAGES */
+.contact-row__value.plain { 
+  color: var(--text); 
+}
+
+/* IDIOMAS */
 .lang-item {
   display: flex;
   justify-content: space-between;
@@ -327,8 +387,10 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   border-radius: 2px;
 }
 
-/* SKILLS */
-.skill-group { margin-bottom: 16px; }
+/* HABILIDADES */
+.skill-group { 
+  margin-bottom: 16px; 
+}
 
 .skill-group__title {
   font-size: 0.58rem;
@@ -340,7 +402,12 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   border-bottom: 1px solid var(--border);
 }
 
-.skill-item { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.skill-item { 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  margin-bottom: 8px; 
+}
 
 .skill-item img {
   width: 18px; height: 18px;
@@ -349,7 +416,10 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   flex-shrink: 0;
 }
 
-.skill-item__info { flex: 1; min-width: 0; }
+.skill-item__info { 
+  flex: 1; 
+  min-width: 0; 
+}
 
 .skill-header {
   display: flex;
@@ -359,7 +429,10 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   margin-bottom: 3px;
 }
 
-.skill-pct { color: var(--gold); font-size: 0.68rem; }
+.skill-pct { 
+  color: var(--gold); 
+  font-size: 0.68rem; 
+}
 
 .skill-bar {
   height: 2px;
@@ -377,9 +450,19 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   box-shadow: 0 0 6px rgba(91,156,246,0.25);
 }
 
-/* LEARNING */
-.learning-note { font-size: 0.72rem; color: var(--muted); font-style: italic; margin-bottom: 8px; }
-.learning-grid { display: flex; flex-wrap: wrap; gap: 5px; }
+/* APRENDIZAJE */
+.learning-note { 
+  font-size: 0.72rem; 
+  color: var(--muted); 
+  font-style: italic; 
+  margin-bottom: 8px; 
+}
+
+.learning-grid { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 5px; 
+}
 
 .learning-chip {
   display: flex;
@@ -392,14 +475,131 @@ p { color: var(--muted); font-size: 0.875rem; line-height: 1.8; }
   transition: border-color 0.2s;
 }
 
-.learning-chip:hover { border-color: var(--gold); }
-.learning-chip img { width: 15px; height: 15px; object-fit: contain; opacity: 0.75; }
-.learning-chip span { font-size: 0.7rem; color: var(--muted); }
+.learning-chip:hover { 
+  border-color: var(--gold); 
+}
 
-/* RESPONSIVE */
-@media (max-width: 720px) {
-  .body-grid { grid-template-columns: 1fr; }
-  .above-fold { grid-template-columns: 1fr; grid-template-rows: auto auto auto; height: auto; }
-  .workspace-banner { height: 260px; }
-  .ring { margin: 0 auto; }
+.learning-chip img { 
+  width: 15px; 
+  height: 15px; 
+  object-fit: contain; 
+  opacity: 0.75; 
+}
+
+.learning-chip span { 
+  font-size: 0.7rem; 
+  color: var(--muted); 
+}
+
+/* EXPERIENCIA */
+.xp-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  transition: border-left-color 0.2s;
+}
+
+.xp-item:hover { 
+  border-left-color: var(--gold-dim); 
+}
+
+.xp-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2px;
+}
+
+.xp-item__role {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.xp-item__period {
+  font-size: 0.68rem;
+  color: var(--gold);
+  background: var(--bg);
+  padding: 2px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.xp-item__company {
+  font-size: 0.76rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.xp-item__desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* BENTO - RINCON PERSONAL */
+.bento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.bento__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 18px;
+  transition: border-color 0.2s;
+}
+
+.bento__card:hover { 
+  border-color: var(--gold); 
+}
+
+
+.bento__card--cover {
+  padding: 0;
+  overflow: hidden;
+}
+
+.bento__card--cover .bento__card__body {
+  padding: 14px 16px 16px;
+}
+
+.bento__img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.bento__title {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.bento__text {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* PIE DE PAGINA */
+.cv-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 65%;
+  margin: 0 auto;
+  padding: 20px 28px 40px;
+  border-top: 1px solid var(--border);
+  font-size: 0.72rem;
+  color: var(--muted);
 }
