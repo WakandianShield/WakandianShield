@@ -6,7 +6,7 @@
 
 <p align="center">
   Building full-stack applications with clean architecture and real-world impact.<br/>
-  Currently studying Software Development at CETI — expanding into ML, cloud, and DevOps.
+  Currently studying Software Development at CETI, expanding into ML, cybersecurity, cloud, and DevOps.
 </p>
 
 <br/>
