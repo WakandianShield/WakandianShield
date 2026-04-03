@@ -22,8 +22,6 @@
   <img width="8" />
   <img src="https://skillicons.dev/icons?i=react" height="45" alt="React"/>
   <img width="8" />
-  <img src="https://skillicons.dev/icons?i=nextjs" height="45" alt="Next.js"/>
-  <img width="8" />
   <img src="https://skillicons.dev/icons?i=cs" height="45" alt="C#"/>
   <img width="8" />
   <img src="https://skillicons.dev/icons?i=dotnet" height="45" alt=".NET"/>
@@ -47,8 +45,6 @@
   <img src="https://skillicons.dev/icons?i=git" height="45" alt="Git"/>
   <img width="8" />
   <img src="https://skillicons.dev/icons?i=github" height="45" alt="GitHub"/>
-  <img width="8" />
-  <img src="https://skillicons.dev/icons?i=docker" height="45" alt="Docker"/>
   <img width="8" />
   <img src="https://railway.com/brand/logo-light.png" height="45" alt="Railway"/>
 </div>
