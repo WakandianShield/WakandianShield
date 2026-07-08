@@ -59,6 +59,15 @@
 
 <body>
     <div class="page">
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a class="site-nav__brand" href="#top">SG</a>
+            <div class="site-nav__links">
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
         <header class="above-fold" id="top">
             <div class="fold__ring">
                 <div class="ring">
@@ -87,6 +96,11 @@
                     <a class="btn btn--primary" href="https://wa.me/523333929652" target="_blank" rel="noreferrer">Contact Me</a>
                     <a class="btn btn--secondary" href="./Page/Curriculum%20CV%20Santiago%20Gallardo%20Ruvalcaba.pdf" download>Download CV</a>
                 </div>
+                <div class="hero__proof" aria-label="Professional highlights">
+                    <span>6 shipped projects</span>
+                    <span>Full-stack delivery</span>
+                    <span>AI-assisted workflow</span>
+                </div>
             </div>
 
             <div class="workspace-banner">
@@ -96,16 +110,22 @@
 
         <div class="body-grid">
             <main>
-                <section>
+                <section class="about-section">
                     <div class="section-label">About</div>
                     <p class="about-text">
                         I am a full-stack web developer focused on turning ideas into useful, maintainable software.
                         I connect frontend, backend, database, and deployment decisions so each project feels clear for
                         users and sustainable for the team that owns it.
                     </p>
+                    <div class="value-strip">
+                        <span>React interfaces</span>
+                        <span>API architecture</span>
+                        <span>Database modeling</span>
+                        <span>Deployment-ready builds</span>
+                    </div>
                 </section>
 
-                <section>
+                <section id="services">
                     <div class="section-label">Services</div>
                     <div class="service-grid">
                         <article class="service-card">
@@ -127,7 +147,7 @@
                     </div>
                 </section>
 
-                <section class="projects-showcase">
+                <section class="projects-showcase" id="projects">
                     <div class="section-label">Projects</div>
 
                     <article class="project">
