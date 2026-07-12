@@ -862,7 +862,7 @@ aside section {
   }
 
   .fold__ring {
-    order: 2;
+    display: none;
   }
 
   .fold__identity {
@@ -897,7 +897,7 @@ aside section {
   }
 
   .above-fold {
-    min-height: 80vh;
+    min-height: 100vh;
     margin-left: 0;
     width: 100%;
     padding: 28px 18px;
@@ -909,11 +909,6 @@ aside section {
 
   .hero__value {
     font-size: 0.96rem;
-  }
-
-  .hero__actions {
-    width: 100%;
-    flex-direction: column;
   }
 
   .btn {
@@ -978,6 +973,11 @@ aside section {
 
   .hero__eyebrow {
     letter-spacing: 0.18em;
+  }
+
+  .hero__actions {
+    width: 100%;
+    flex-direction: column;
   }
 
   .hero__eyebrow::before,
