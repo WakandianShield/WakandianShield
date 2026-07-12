@@ -69,7 +69,7 @@ img {
 }
 
 .site-nav {
-  position: sticky;
+  position: fixed;
   top: 5px;
   z-index: 20;
   display: flex;
@@ -135,6 +135,7 @@ img {
   padding: 44px max(28px, calc((100vw - 1220px) / 2));
   background: var(--bg-deep);
   isolation: isolate;
+  padding-top: 100px;
 }
 
 .above-fold::before {
