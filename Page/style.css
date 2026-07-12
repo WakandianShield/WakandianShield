@@ -884,7 +884,7 @@ aside section {
 
 @media (max-width: 820px) {
   .page {
-    padding: 0 16px 48px;
+    padding: 0 0 48px;
   }
 
   .site-nav {
@@ -904,7 +904,7 @@ aside section {
   }
 
   .hero__name {
-    font-size: clamp(2.8rem, 16vw, 4.2rem);
+    font-size: clamp(2.8rem, 16vw, 3.2rem);
   }
 
   .hero__value {
